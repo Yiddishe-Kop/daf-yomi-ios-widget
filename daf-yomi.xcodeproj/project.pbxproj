@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE57CFA32A2D31ED0068E498 /* daf_yomiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFA22A2D31ED0068E498 /* daf_yomiApp.swift */; };
+		BE57CFA52A2D31ED0068E498 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFA42A2D31ED0068E498 /* ContentView.swift */; };
+		BE57CFA72A2D31EE0068E498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE57CFA62A2D31EE0068E498 /* Assets.xcassets */; };
+		BE57CFAA2A2D31EE0068E498 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE57CFA92A2D31EE0068E498 /* Preview Assets.xcassets */; };
+		BE57CFB42A2D31EE0068E498 /* daf_yomiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFB32A2D31EE0068E498 /* daf_yomiTests.swift */; };
+		BE57CFBE2A2D31EE0068E498 /* daf_yomiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFBD2A2D31EE0068E498 /* daf_yomiUITests.swift */; };
+		BE57CFC02A2D31EE0068E498 /* daf_yomiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFBF2A2D31EE0068E498 /* daf_yomiUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE57CFB02A2D31EE0068E498 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE57CF972A2D31ED0068E498 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE57CF9E2A2D31ED0068E498;
+			remoteInfo = "daf-yomi";
+		};
+		BE57CFBA2A2D31EE0068E498 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE57CF972A2D31ED0068E498 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE57CF9E2A2D31ED0068E498;
+			remoteInfo = "daf-yomi";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE57CF9F2A2D31ED0068E498 /* daf-yomi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "daf-yomi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE57CFA22A2D31ED0068E498 /* daf_yomiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daf_yomiApp.swift; sourceTree = "<group>"; };
+		BE57CFA42A2D31ED0068E498 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BE57CFA62A2D31EE0068E498 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE57CFA92A2D31EE0068E498 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BE57CFAF2A2D31EE0068E498 /* daf-yomiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "daf-yomiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE57CFB32A2D31EE0068E498 /* daf_yomiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daf_yomiTests.swift; sourceTree = "<group>"; };
+		BE57CFB92A2D31EE0068E498 /* daf-yomiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "daf-yomiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE57CFBD2A2D31EE0068E498 /* daf_yomiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daf_yomiUITests.swift; sourceTree = "<group>"; };
+		BE57CFBF2A2D31EE0068E498 /* daf_yomiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daf_yomiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE57CF9C2A2D31ED0068E498 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE57CFAC2A2D31EE0068E498 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE57CFB62A2D31EE0068E498 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE57CF962A2D31ED0068E498 = {
+			isa = PBXGroup;
+			children = (
+				BE57CFA12A2D31ED0068E498 /* daf-yomi */,
+				BE57CFB22A2D31EE0068E498 /* daf-yomiTests */,
+				BE57CFBC2A2D31EE0068E498 /* daf-yomiUITests */,
+				BE57CFA02A2D31ED0068E498 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE57CFA02A2D31ED0068E498 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE57CF9F2A2D31ED0068E498 /* daf-yomi.app */,
+				BE57CFAF2A2D31EE0068E498 /* daf-yomiTests.xctest */,
+				BE57CFB92A2D31EE0068E498 /* daf-yomiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE57CFA12A2D31ED0068E498 /* daf-yomi */ = {
+			isa = PBXGroup;
+			children = (
+				BE57CFA22A2D31ED0068E498 /* daf_yomiApp.swift */,
+				BE57CFA42A2D31ED0068E498 /* ContentView.swift */,
+				BE57CFA62A2D31EE0068E498 /* Assets.xcassets */,
+				BE57CFA82A2D31EE0068E498 /* Preview Content */,
+			);
+			path = "daf-yomi";
+			sourceTree = "<group>";
+		};
+		BE57CFA82A2D31EE0068E498 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BE57CFA92A2D31EE0068E498 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BE57CFB22A2D31EE0068E498 /* daf-yomiTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE57CFB32A2D31EE0068E498 /* daf_yomiTests.swift */,
+			);
+			path = "daf-yomiTests";
+			sourceTree = "<group>";
+		};
+		BE57CFBC2A2D31EE0068E498 /* daf-yomiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE57CFBD2A2D31EE0068E498 /* daf_yomiUITests.swift */,
+				BE57CFBF2A2D31EE0068E498 /* daf_yomiUITestsLaunchTests.swift */,
+			);
+			path = "daf-yomiUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE57CF9E2A2D31ED0068E498 /* daf-yomi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE57CFC32A2D31EE0068E498 /* Build configuration list for PBXNativeTarget "daf-yomi" */;
+			buildPhases = (
+				BE57CF9B2A2D31ED0068E498 /* Sources */,
+				BE57CF9C2A2D31ED0068E498 /* Frameworks */,
+				BE57CF9D2A2D31ED0068E498 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "daf-yomi";
+			productName = "daf-yomi";
+			productReference = BE57CF9F2A2D31ED0068E498 /* daf-yomi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE57CFAE2A2D31EE0068E498 /* daf-yomiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE57CFC62A2D31EE0068E498 /* Build configuration list for PBXNativeTarget "daf-yomiTests" */;
+			buildPhases = (
+				BE57CFAB2A2D31EE0068E498 /* Sources */,
+				BE57CFAC2A2D31EE0068E498 /* Frameworks */,
+				BE57CFAD2A2D31EE0068E498 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE57CFB12A2D31EE0068E498 /* PBXTargetDependency */,
+			);
+			name = "daf-yomiTests";
+			productName = "daf-yomiTests";
+			productReference = BE57CFAF2A2D31EE0068E498 /* daf-yomiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE57CFB82A2D31EE0068E498 /* daf-yomiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE57CFC92A2D31EE0068E498 /* Build configuration list for PBXNativeTarget "daf-yomiUITests" */;
+			buildPhases = (
+				BE57CFB52A2D31EE0068E498 /* Sources */,
+				BE57CFB62A2D31EE0068E498 /* Frameworks */,
+				BE57CFB72A2D31EE0068E498 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE57CFBB2A2D31EE0068E498 /* PBXTargetDependency */,
+			);
+			name = "daf-yomiUITests";
+			productName = "daf-yomiUITests";
+			productReference = BE57CFB92A2D31EE0068E498 /* daf-yomiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE57CF972A2D31ED0068E498 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					BE57CF9E2A2D31ED0068E498 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					BE57CFAE2A2D31EE0068E498 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = BE57CF9E2A2D31ED0068E498;
+					};
+					BE57CFB82A2D31EE0068E498 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = BE57CF9E2A2D31ED0068E498;
+					};
+				};
+			};
+			buildConfigurationList = BE57CF9A2A2D31ED0068E498 /* Build configuration list for PBXProject "daf-yomi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE57CF962A2D31ED0068E498;
+			productRefGroup = BE57CFA02A2D31ED0068E498 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE57CF9E2A2D31ED0068E498 /* daf-yomi */,
+				BE57CFAE2A2D31EE0068E498 /* daf-yomiTests */,
+				BE57CFB82A2D31EE0068E498 /* daf-yomiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE57CF9D2A2D31ED0068E498 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE57CFAA2A2D31EE0068E498 /* Preview Assets.xcassets in Resources */,
+				BE57CFA72A2D31EE0068E498 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE57CFAD2A2D31EE0068E498 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE57CFB72A2D31EE0068E498 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE57CF9B2A2D31ED0068E498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE57CFA52A2D31ED0068E498 /* ContentView.swift in Sources */,
+				BE57CFA32A2D31ED0068E498 /* daf_yomiApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE57CFAB2A2D31EE0068E498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE57CFB42A2D31EE0068E498 /* daf_yomiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE57CFB52A2D31EE0068E498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE57CFC02A2D31EE0068E498 /* daf_yomiUITestsLaunchTests.swift in Sources */,
+				BE57CFBE2A2D31EE0068E498 /* daf_yomiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE57CFB12A2D31EE0068E498 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE57CF9E2A2D31ED0068E498 /* daf-yomi */;
+			targetProxy = BE57CFB02A2D31EE0068E498 /* PBXContainerItemProxy */;
+		};
+		BE57CFBB2A2D31EE0068E498 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE57CF9E2A2D31ED0068E498 /* daf-yomi */;
+			targetProxy = BE57CFBA2A2D31EE0068E498 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BE57CFC12A2D31EE0068E498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE57CFC22A2D31EE0068E498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE57CFC42A2D31EE0068E498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"daf-yomi/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yiddishe-kop.daf-yomi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE57CFC52A2D31EE0068E498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"daf-yomi/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yiddishe-kop.daf-yomi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE57CFC72A2D31EE0068E498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yiddishe-kop.daf-yomiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/daf-yomi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/daf-yomi";
+			};
+			name = Debug;
+		};
+		BE57CFC82A2D31EE0068E498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yiddishe-kop.daf-yomiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/daf-yomi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/daf-yomi";
+			};
+			name = Release;
+		};
+		BE57CFCA2A2D31EE0068E498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yiddishe-kop.daf-yomiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "daf-yomi";
+			};
+			name = Debug;
+		};
+		BE57CFCB2A2D31EE0068E498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yiddishe-kop.daf-yomiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "daf-yomi";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE57CF9A2A2D31ED0068E498 /* Build configuration list for PBXProject "daf-yomi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE57CFC12A2D31EE0068E498 /* Debug */,
+				BE57CFC22A2D31EE0068E498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE57CFC32A2D31EE0068E498 /* Build configuration list for PBXNativeTarget "daf-yomi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE57CFC42A2D31EE0068E498 /* Debug */,
+				BE57CFC52A2D31EE0068E498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE57CFC62A2D31EE0068E498 /* Build configuration list for PBXNativeTarget "daf-yomiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE57CFC72A2D31EE0068E498 /* Debug */,
+				BE57CFC82A2D31EE0068E498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE57CFC92A2D31EE0068E498 /* Build configuration list for PBXNativeTarget "daf-yomiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE57CFCA2A2D31EE0068E498 /* Debug */,
+				BE57CFCB2A2D31EE0068E498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE57CF972A2D31ED0068E498 /* Project object */;
+}
