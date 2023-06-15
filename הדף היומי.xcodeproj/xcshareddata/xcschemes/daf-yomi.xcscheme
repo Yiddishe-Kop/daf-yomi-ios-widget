@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1430"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BE57CF9E2A2D31ED0068E498"
+               BuildableName = "daf-yomi.app"
+               BlueprintName = "daf-yomi"
+               ReferencedContainer = "container:&#x5d4;&#x5d3;&#x5e3; &#x5d4;&#x5d9;&#x5d5;&#x5de;&#x5d9;.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      shouldAutocreateTestPlan = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BE57CFAE2A2D31EE0068E498"
+               BuildableName = "daf-yomiTests.xctest"
+               BlueprintName = "daf-yomiTests"
+               ReferencedContainer = "container:&#x5d4;&#x5d3;&#x5e3; &#x5d4;&#x5d9;&#x5d5;&#x5de;&#x5d9;.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BE57CFB82A2D31EE0068E498"
+               BuildableName = "daf-yomiUITests.xctest"
+               BlueprintName = "daf-yomiUITests"
+               ReferencedContainer = "container:&#x5d4;&#x5d3;&#x5e3; &#x5d4;&#x5d9;&#x5d5;&#x5de;&#x5d9;.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "BE57CF9E2A2D31ED0068E498"
+            BuildableName = "daf-yomi.app"
+            BlueprintName = "daf-yomi"
+            ReferencedContainer = "container:&#x5d4;&#x5d3;&#x5e3; &#x5d4;&#x5d9;&#x5d5;&#x5de;&#x5d9;.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "BE57CF9E2A2D31ED0068E498"
+            BuildableName = "daf-yomi.app"
+            BlueprintName = "daf-yomi"
+            ReferencedContainer = "container:&#x5d4;&#x5d3;&#x5e3; &#x5d4;&#x5d9;&#x5d5;&#x5de;&#x5d9;.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

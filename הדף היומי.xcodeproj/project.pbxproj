@@ -7,13 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE45EC102A3B4C83008ACA2A /* SiddurOC-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE45EC0E2A3B4C83008ACA2A /* SiddurOC-Regular.otf */; };
+		BE45EC112A3B4C83008ACA2A /* SiddurOC-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE45EC0E2A3B4C83008ACA2A /* SiddurOC-Regular.otf */; };
+		BE45EC122A3B4C83008ACA2A /* SiddurOC-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE45EC0F2A3B4C83008ACA2A /* SiddurOC-Black.otf */; };
+		BE45EC132A3B4C83008ACA2A /* SiddurOC-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE45EC0F2A3B4C83008ACA2A /* SiddurOC-Black.otf */; };
+		BE45EC142A3B5442008ACA2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE57CFDE2A2D35D00068E498 /* Assets.xcassets */; };
+		BE45EC1E2A3B8002008ACA2A /* DafGuage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE45EC1D2A3B8002008ACA2A /* DafGuage.swift */; };
+		BE45EC1F2A3B8002008ACA2A /* DafGuage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE45EC1D2A3B8002008ACA2A /* DafGuage.swift */; };
+		BE45EC212A3B8514008ACA2A /* TextResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE45EC202A3B8514008ACA2A /* TextResponse.swift */; };
+		BE45EC222A3B8514008ACA2A /* TextResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE45EC202A3B8514008ACA2A /* TextResponse.swift */; };
 		BE57CFA32A2D31ED0068E498 /* daf_yomiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFA22A2D31ED0068E498 /* daf_yomiApp.swift */; };
 		BE57CFA52A2D31ED0068E498 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFA42A2D31ED0068E498 /* ContentView.swift */; };
-		BE57CFA72A2D31EE0068E498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE57CFA62A2D31EE0068E498 /* Assets.xcassets */; };
 		BE57CFAA2A2D31EE0068E498 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE57CFA92A2D31EE0068E498 /* Preview Assets.xcassets */; };
 		BE57CFB42A2D31EE0068E498 /* daf_yomiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFB32A2D31EE0068E498 /* daf_yomiTests.swift */; };
 		BE57CFBE2A2D31EE0068E498 /* daf_yomiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFBD2A2D31EE0068E498 /* daf_yomiUITests.swift */; };
 		BE57CFC02A2D31EE0068E498 /* daf_yomiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFBF2A2D31EE0068E498 /* daf_yomiUITestsLaunchTests.swift */; };
+		BE57CFD32A2D35CF0068E498 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE57CFD22A2D35CF0068E498 /* WidgetKit.framework */; };
+		BE57CFD52A2D35CF0068E498 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE57CFD42A2D35CF0068E498 /* SwiftUI.framework */; };
+		BE57CFD82A2D35CF0068E498 /* todayBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFD72A2D35CF0068E498 /* todayBundle.swift */; };
+		BE57CFDA2A2D35CF0068E498 /* todayLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFD92A2D35CF0068E498 /* todayLiveActivity.swift */; };
+		BE57CFDC2A2D35CF0068E498 /* today.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFDB2A2D35CF0068E498 /* today.swift */; };
+		BE57CFDF2A2D35D00068E498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE57CFDE2A2D35D00068E498 /* Assets.xcassets */; };
+		BE57CFE12A2D35D00068E498 /* today.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFDD2A2D35D00068E498 /* today.intentdefinition */; };
+		BE57CFE22A2D35D00068E498 /* today.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFDD2A2D35D00068E498 /* today.intentdefinition */; };
+		BE57CFE52A2D35D00068E498 /* todayExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BE57CFD02A2D35CF0068E498 /* todayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BEF5B69E2A3B1FCE007D74A8 /* DafYomiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF5B69D2A3B1FCE007D74A8 /* DafYomiData.swift */; };
+		BEF5B69F2A3B1FCE007D74A8 /* DafYomiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF5B69D2A3B1FCE007D74A8 /* DafYomiData.swift */; };
+		BEF5B6A12A3B1FD8007D74A8 /* helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF5B6A02A3B1FD8007D74A8 /* helpers.swift */; };
+		BEF5B6A22A3B1FD8007D74A8 /* helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF5B6A02A3B1FD8007D74A8 /* helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,19 +52,56 @@
 			remoteGlobalIDString = BE57CF9E2A2D31ED0068E498;
 			remoteInfo = "daf-yomi";
 		};
+		BE57CFE32A2D35D00068E498 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE57CF972A2D31ED0068E498 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE57CFCF2A2D35CF0068E498;
+			remoteInfo = todayExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BE57CFE92A2D35D00068E498 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BE57CFE52A2D35D00068E498 /* todayExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		BE45EC0E2A3B4C83008ACA2A /* SiddurOC-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SiddurOC-Regular.otf"; sourceTree = "<group>"; };
+		BE45EC0F2A3B4C83008ACA2A /* SiddurOC-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SiddurOC-Black.otf"; sourceTree = "<group>"; };
+		BE45EC1C2A3B5B13008ACA2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BE45EC1D2A3B8002008ACA2A /* DafGuage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DafGuage.swift; sourceTree = "<group>"; };
+		BE45EC202A3B8514008ACA2A /* TextResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextResponse.swift; sourceTree = "<group>"; };
 		BE57CF9F2A2D31ED0068E498 /* daf-yomi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "daf-yomi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE57CFA22A2D31ED0068E498 /* daf_yomiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daf_yomiApp.swift; sourceTree = "<group>"; };
 		BE57CFA42A2D31ED0068E498 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		BE57CFA62A2D31EE0068E498 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE57CFA92A2D31EE0068E498 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BE57CFAF2A2D31EE0068E498 /* daf-yomiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "daf-yomiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE57CFB32A2D31EE0068E498 /* daf_yomiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daf_yomiTests.swift; sourceTree = "<group>"; };
 		BE57CFB92A2D31EE0068E498 /* daf-yomiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "daf-yomiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE57CFBD2A2D31EE0068E498 /* daf_yomiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daf_yomiUITests.swift; sourceTree = "<group>"; };
 		BE57CFBF2A2D31EE0068E498 /* daf_yomiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daf_yomiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BE57CFD02A2D35CF0068E498 /* todayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = todayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE57CFD22A2D35CF0068E498 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		BE57CFD42A2D35CF0068E498 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		BE57CFD72A2D35CF0068E498 /* todayBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todayBundle.swift; sourceTree = "<group>"; };
+		BE57CFD92A2D35CF0068E498 /* todayLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todayLiveActivity.swift; sourceTree = "<group>"; };
+		BE57CFDB2A2D35CF0068E498 /* today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = today.swift; sourceTree = "<group>"; };
+		BE57CFDD2A2D35D00068E498 /* today.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = today.intentdefinition; sourceTree = "<group>"; };
+		BE57CFDE2A2D35D00068E498 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE57CFE02A2D35D00068E498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEF5B6962A3B1E48007D74A8 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BEF5B69D2A3B1FCE007D74A8 /* DafYomiData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DafYomiData.swift; sourceTree = "<group>"; };
+		BEF5B6A02A3B1FD8007D74A8 /* helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,15 +126,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE57CFCD2A2D35CF0068E498 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE57CFD52A2D35CF0068E498 /* SwiftUI.framework in Frameworks */,
+				BE57CFD32A2D35CF0068E498 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE45EC1A2A3B599B008ACA2A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BE45EC1B2A3B59AD008ACA2A /* fonts */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BE45EC1B2A3B59AD008ACA2A /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BE45EC0F2A3B4C83008ACA2A /* SiddurOC-Black.otf */,
+				BE45EC0E2A3B4C83008ACA2A /* SiddurOC-Regular.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		BE57CF962A2D31ED0068E498 = {
 			isa = PBXGroup;
 			children = (
+				BE45EC1A2A3B599B008ACA2A /* Shared */,
 				BE57CFA12A2D31ED0068E498 /* daf-yomi */,
 				BE57CFB22A2D31EE0068E498 /* daf-yomiTests */,
 				BE57CFBC2A2D31EE0068E498 /* daf-yomiUITests */,
+				BE57CFD62A2D35CF0068E498 /* today */,
+				BE57CFD12A2D35CF0068E498 /* Frameworks */,
 				BE57CFA02A2D31ED0068E498 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +174,7 @@
 				BE57CF9F2A2D31ED0068E498 /* daf-yomi.app */,
 				BE57CFAF2A2D31EE0068E498 /* daf-yomiTests.xctest */,
 				BE57CFB92A2D31EE0068E498 /* daf-yomiUITests.xctest */,
+				BE57CFD02A2D35CF0068E498 /* todayExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,10 +182,11 @@
 		BE57CFA12A2D31ED0068E498 /* daf-yomi */ = {
 			isa = PBXGroup;
 			children = (
+				BE45EC1C2A3B5B13008ACA2A /* Info.plist */,
 				BE57CFA22A2D31ED0068E498 /* daf_yomiApp.swift */,
 				BE57CFA42A2D31ED0068E498 /* ContentView.swift */,
-				BE57CFA62A2D31EE0068E498 /* Assets.xcassets */,
 				BE57CFA82A2D31EE0068E498 /* Preview Content */,
+				BE45EC1D2A3B8002008ACA2A /* DafGuage.swift */,
 			);
 			path = "daf-yomi";
 			sourceTree = "<group>";
@@ -127,6 +216,32 @@
 			path = "daf-yomiUITests";
 			sourceTree = "<group>";
 		};
+		BE57CFD12A2D35CF0068E498 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE57CFD22A2D35CF0068E498 /* WidgetKit.framework */,
+				BE57CFD42A2D35CF0068E498 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE57CFD62A2D35CF0068E498 /* today */ = {
+			isa = PBXGroup;
+			children = (
+				BEF5B6962A3B1E48007D74A8 /* MyPlayground.playground */,
+				BE57CFD72A2D35CF0068E498 /* todayBundle.swift */,
+				BEF5B69D2A3B1FCE007D74A8 /* DafYomiData.swift */,
+				BEF5B6A02A3B1FD8007D74A8 /* helpers.swift */,
+				BE57CFD92A2D35CF0068E498 /* todayLiveActivity.swift */,
+				BE57CFDB2A2D35CF0068E498 /* today.swift */,
+				BE57CFDD2A2D35D00068E498 /* today.intentdefinition */,
+				BE57CFDE2A2D35D00068E498 /* Assets.xcassets */,
+				BE57CFE02A2D35D00068E498 /* Info.plist */,
+				BE45EC202A3B8514008ACA2A /* TextResponse.swift */,
+			);
+			path = today;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +252,12 @@
 				BE57CF9B2A2D31ED0068E498 /* Sources */,
 				BE57CF9C2A2D31ED0068E498 /* Frameworks */,
 				BE57CF9D2A2D31ED0068E498 /* Resources */,
+				BE57CFE92A2D35D00068E498 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BE57CFE42A2D35D00068E498 /* PBXTargetDependency */,
 			);
 			name = "daf-yomi";
 			productName = "daf-yomi";
@@ -183,6 +300,23 @@
 			productReference = BE57CFB92A2D31EE0068E498 /* daf-yomiUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		BE57CFCF2A2D35CF0068E498 /* todayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE57CFE62A2D35D00068E498 /* Build configuration list for PBXNativeTarget "todayExtension" */;
+			buildPhases = (
+				BE57CFCC2A2D35CF0068E498 /* Sources */,
+				BE57CFCD2A2D35CF0068E498 /* Frameworks */,
+				BE57CFCE2A2D35CF0068E498 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = todayExtension;
+			productName = todayExtension;
+			productReference = BE57CFD02A2D35CF0068E498 /* todayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,9 +338,12 @@
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = BE57CF9E2A2D31ED0068E498;
 					};
+					BE57CFCF2A2D35CF0068E498 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 				};
 			};
-			buildConfigurationList = BE57CF9A2A2D31ED0068E498 /* Build configuration list for PBXProject "daf-yomi" */;
+			buildConfigurationList = BE57CF9A2A2D31ED0068E498 /* Build configuration list for PBXProject "הדף היומי" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -222,6 +359,7 @@
 				BE57CF9E2A2D31ED0068E498 /* daf-yomi */,
 				BE57CFAE2A2D31EE0068E498 /* daf-yomiTests */,
 				BE57CFB82A2D31EE0068E498 /* daf-yomiUITests */,
+				BE57CFCF2A2D35CF0068E498 /* todayExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -232,7 +370,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE57CFAA2A2D31EE0068E498 /* Preview Assets.xcassets in Resources */,
-				BE57CFA72A2D31EE0068E498 /* Assets.xcassets in Resources */,
+				BE45EC102A3B4C83008ACA2A /* SiddurOC-Regular.otf in Resources */,
+				BE45EC122A3B4C83008ACA2A /* SiddurOC-Black.otf in Resources */,
+				BE45EC142A3B5442008ACA2A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +390,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE57CFCE2A2D35CF0068E498 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE45EC132A3B4C83008ACA2A /* SiddurOC-Black.otf in Resources */,
+				BE45EC112A3B4C83008ACA2A /* SiddurOC-Regular.otf in Resources */,
+				BE57CFDF2A2D35D00068E498 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,8 +407,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE57CFE22A2D35D00068E498 /* today.intentdefinition in Sources */,
+				BEF5B6A12A3B1FD8007D74A8 /* helpers.swift in Sources */,
+				BE45EC212A3B8514008ACA2A /* TextResponse.swift in Sources */,
 				BE57CFA52A2D31ED0068E498 /* ContentView.swift in Sources */,
+				BE45EC1E2A3B8002008ACA2A /* DafGuage.swift in Sources */,
 				BE57CFA32A2D31ED0068E498 /* daf_yomiApp.swift in Sources */,
+				BEF5B69E2A3B1FCE007D74A8 /* DafYomiData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +434,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE57CFCC2A2D35CF0068E498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE57CFE12A2D35D00068E498 /* today.intentdefinition in Sources */,
+				BE45EC222A3B8514008ACA2A /* TextResponse.swift in Sources */,
+				BEF5B6A22A3B1FD8007D74A8 /* helpers.swift in Sources */,
+				BE45EC1F2A3B8002008ACA2A /* DafGuage.swift in Sources */,
+				BE57CFDA2A2D35CF0068E498 /* todayLiveActivity.swift in Sources */,
+				BE57CFDC2A2D35CF0068E498 /* today.swift in Sources */,
+				BEF5B69F2A3B1FCE007D74A8 /* DafYomiData.swift in Sources */,
+				BE57CFD82A2D35CF0068E498 /* todayBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +461,11 @@
 			isa = PBXTargetDependency;
 			target = BE57CF9E2A2D31ED0068E498 /* daf-yomi */;
 			targetProxy = BE57CFBA2A2D31EE0068E498 /* PBXContainerItemProxy */;
+		};
+		BE57CFE42A2D35D00068E498 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE57CFCF2A2D35CF0068E498 /* todayExtension */;
+			targetProxy = BE57CFE32A2D35D00068E498 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -345,7 +520,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +574,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -412,18 +587,24 @@
 		BE57CFC42A2D31EE0068E498 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"daf-yomi/Preview Content\"";
+				DEVELOPMENT_TEAM = 3AS937TYU7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "daf-yomi/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "הדף היומי";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,18 +621,24 @@
 		BE57CFC52A2D31EE0068E498 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"daf-yomi/Preview Content\"";
+				DEVELOPMENT_TEAM = 3AS937TYU7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "daf-yomi/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "הדף היומי";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -537,10 +724,66 @@
 			};
 			name = Release;
 		};
+		BE57CFE72A2D35D00068E498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3AS937TYU7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = today/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "הדף של היום";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yiddishe-kop.daf-yomi.today";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE57CFE82A2D35D00068E498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3AS937TYU7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = today/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "הדף של היום";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yiddishe-kop.daf-yomi.today";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BE57CF9A2A2D31ED0068E498 /* Build configuration list for PBXProject "daf-yomi" */ = {
+		BE57CF9A2A2D31ED0068E498 /* Build configuration list for PBXProject "הדף היומי" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE57CFC12A2D31EE0068E498 /* Debug */,
@@ -572,6 +815,15 @@
 			buildConfigurations = (
 				BE57CFCA2A2D31EE0068E498 /* Debug */,
 				BE57CFCB2A2D31EE0068E498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE57CFE62A2D35D00068E498 /* Build configuration list for PBXNativeTarget "todayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE57CFE72A2D35D00068E498 /* Debug */,
+				BE57CFE82A2D35D00068E498 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
