@@ -99,4 +99,14 @@ struct DafYomiData: Codable {
         // convert to number
         return self.hebrewToNumber(hebrewNumber: dafWithoutGershayim)
     }
+    
+    func shortTractateName() -> String {
+        let words = self.tractate.components(separatedBy: " ")
+        if words.count == 2 {
+            let firstLetters = words.map { $0.prefix(1).capitalized }
+            return firstLetters.joined(separator: "״")
+        } else {
+            return self.tractate
+        }
+    }
 }

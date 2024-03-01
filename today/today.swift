@@ -56,6 +56,9 @@ struct todayEntryView : View {
                     }
                 case .accessoryCircular:
                     DafGuage(dafYomiData: entry.data!)
+                    .containerBackground(for: .widget) {
+                        Color.gray
+                    }
                 case .accessoryRectangular:
                     HStack{
                         Text(entry.data!.tractate + " דף")
@@ -63,7 +66,9 @@ struct todayEntryView : View {
                         Text(String(entry.data!.daf))
                             .font(Font.custom("SiddurOC-Black", size: 25))
                     }.environment(\.layoutDirection, .rightToLeft)
-                    
+                    .containerBackground(for: .widget) {
+                        Color.gray
+                    }
                 default:
                     Text(entry.data!.tractate + " דף " + String(entry.data!.daf))
             }
