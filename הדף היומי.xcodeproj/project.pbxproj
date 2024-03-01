@@ -262,6 +262,8 @@
 				BE57CFE42A2D35D00068E498 /* PBXTargetDependency */,
 			);
 			name = "daf-yomi";
+			packageProductDependencies = (
+			);
 			productName = "daf-yomi";
 			productReference = BE57CF9F2A2D31ED0068E498 /* daf-yomi.app */;
 			productType = "com.apple.product-type.application";
@@ -354,6 +356,8 @@
 				Base,
 			);
 			mainGroup = BE57CF962A2D31ED0068E498;
+			packageReferences = (
+			);
 			productRefGroup = BE57CFA02A2D31ED0068E498 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -598,7 +602,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "daf-yomi/daf-yomi.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"daf-yomi/Preview Content\"";
 				DEVELOPMENT_TEAM = 3AS937TYU7;
 				ENABLE_PREVIEWS = YES;
@@ -616,7 +620,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yiddishe-kop.daf-yomi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -633,7 +637,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "daf-yomi/daf-yomi.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"daf-yomi/Preview Content\"";
 				DEVELOPMENT_TEAM = 3AS937TYU7;
 				ENABLE_PREVIEWS = YES;
@@ -651,7 +655,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yiddishe-kop.daf-yomi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

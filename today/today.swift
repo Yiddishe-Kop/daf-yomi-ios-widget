@@ -28,7 +28,9 @@ struct Provider: TimelineProvider {
             let entry = DafYomiEntry(date: Date(), data: apiManager.dafYomiData)
             entries.append(entry)
             
-            let timeline = Timeline(entries: entries, policy: .atEnd)
+            let tommorow = Calendar.current.date(byAdding: .day, value: 1, to: Date())!
+            let midnight = Calendar.current.startOfDay(for: tommorow)
+            let timeline = Timeline(entries: entries, policy: .after(midnight))
             completion(timeline)
         }
     }

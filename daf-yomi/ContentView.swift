@@ -21,27 +21,29 @@ struct ContentView: View {
                     Text("Todays Daf")
                         .font(.title2)
                     Spacer()
-                    if (apiManager.dafYomiData != nil) {
+                    if apiManager.dafYomiData != nil {
                         DafGuage(dafYomiData: apiManager.dafYomiData!)
                             .padding()
                     }
                     
                 }
-                .background(.white)
+                .background(.background)
                 .cornerRadius(12)
                 .padding(.horizontal)
-                .shadow(color: Color("gray800").opacity(0.3), radius: 2)
                 
                 VStack {
                     VStack{
-                        if (apiManager.dafYomiData != nil) {
+                        if apiManager.dafYomiData != nil {
                             Text(apiManager.dafYomiData!.tractate)
                                 .font(Font.custom("SiddurOC-Black", size: 50))
                                 .foregroundColor(.accentColor)
+                                .padding(.top, -20)
                             Text(apiManager.dafYomiData!.daf)
                                 .font(Font.custom("SiddurOC-Black", size: 200))
                                 .foregroundColor(Color("gray800"))
                                 .offset(x: 0, y: -40)
+                                .padding(.top, -100)
+                                .padding(.bottom, -40)
                             
                         } else {
                             ProgressView("טוען...")
@@ -50,21 +52,24 @@ struct ContentView: View {
                     }.padding()
                 }
                 .frame(minWidth: 0, maxWidth: .infinity)
-                .background(.white)
+                .background(.background)
                 .cornerRadius(12)
                 .padding(.horizontal)
                 .padding(.bottom, 5)
-                .shadow(color: Color("gray800").opacity(0.3), radius: 2)
                 
                 
-                if (apiManager.dafYomiData != nil) {
+                if apiManager.dafYomiData != nil {
                     // Daf Text
                     VStack {
                         VStack(alignment: .leading) {
                             if (!(apiManager.heText.first?.isEmpty ?? false)) {
                                 ForEach(apiManager.heText, id: \.self) { page in
                                     ForEach(page, id: \.self) { line in
-                                        Text(line)
+                                        if let plainText = removeHTMLTags(line) {
+                                            Text(plainText)
+                                        } else {
+                                            Text("Error parsing HTML")
+                                        }
                                     }
                                 }
                                 .environment(\.font, Font.custom("SiddurOC-Regular", size: 28))
@@ -90,9 +95,8 @@ struct ContentView: View {
                         .environment(\.layoutDirection, .rightToLeft)
                     }
                     .frame(minWidth: 0, maxWidth: .infinity)
-                    .background(.white)
+                    .background(.background)
                     .cornerRadius(12)
-                    .shadow(color: Color("gray800").opacity(0.3), radius: 2)
                     .padding([.horizontal])
                 }
                 
@@ -105,6 +109,23 @@ struct ContentView: View {
             }
         }
         .background(Color("gray200"))
+    }
+}
+
+// Function to remove HTML tags from the string
+func removeHTMLTags(_ htmlString: String) -> String? {
+    do {
+        // Regular expression to remove HTML tags
+        let regex = try NSRegularExpression(pattern: "<[^>]+>", options: .caseInsensitive)
+        // Replace HTML tags with an empty string
+        let plainText = regex.stringByReplacingMatches(in: htmlString,
+                                                        options: [],
+                                                        range: NSRange(location: 0, length: htmlString.utf16.count),
+                                                        withTemplate: "")
+        return plainText
+    } catch {
+        print("Error:", error)
+        return nil
     }
 }
 
