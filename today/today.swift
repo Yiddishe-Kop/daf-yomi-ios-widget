@@ -71,7 +71,33 @@ struct todayEntryView : View {
                     .containerBackground(for: .widget) {
                         Color.gray
                     }
-                default:
+                case .systemSmall:
+                    VStack {
+                        Spacer()
+                        HStack {
+                            Spacer()
+                            DafGuage(dafYomiData: entry.data!)
+                        }
+                    }.containerBackground(for: .widget) {
+                        Color.clear
+                    }
+                case .systemMedium:
+                    DafGuage(dafYomiData: entry.data!)
+                        .containerBackground(for: .widget) {
+                            Color.white.opacity(0.25)
+                        }
+                case .systemLarge:
+                    DafGuage(dafYomiData: entry.data!)
+                        .containerBackground(for: .widget) {
+                            Color.white
+                        }
+                case .systemExtraLarge:
+                    DafGuage(dafYomiData: entry.data!)
+                        .containerBackground(for: .widget) {
+                            Color.white
+                        }
+
+            default:
                     Text(entry.data!.tractate + " דף " + String(entry.data!.daf))
             }
         }
@@ -87,7 +113,15 @@ struct today: Widget {
             }
             .configurationDisplayName("הדף היומי")
             .description("הצג את הדף של היום")
-            .supportedFamilies([.accessoryCircular, .accessoryInline, .accessoryRectangular])
+            .supportedFamilies([
+                .accessoryCircular,
+                .accessoryInline,
+                .accessoryRectangular,
+                .systemSmall,
+                .systemMedium,
+                .systemLarge
+            ])
+//            .contentMarginsDisabled()
         }
 }
 
@@ -102,5 +136,17 @@ struct today_Previews: PreviewProvider {
         todayEntryView(entry: DafYomiEntry(date: Date(), data: DafYomiData(tractate: "ברכות", daf: "ג׳", ref: "Gittin.30")))
             .previewContext(WidgetPreviewContext(family: .accessoryCircular))
             .previewDisplayName("Circular")
+        todayEntryView(entry: DafYomiEntry(date: Date(), data: DafYomiData(tractate: "ברכות", daf: "ג׳", ref: "Gittin.30")))
+            .previewContext(WidgetPreviewContext(family: .systemSmall))
+            .previewDisplayName("Small Widget")
+        todayEntryView(entry: DafYomiEntry(date: Date(), data: DafYomiData(tractate: "ברכות", daf: "ג׳", ref: "Gittin.30")))
+            .previewContext(WidgetPreviewContext(family: .systemMedium))
+            .previewDisplayName("Medium Widget")
+        todayEntryView(entry: DafYomiEntry(date: Date(), data: DafYomiData(tractate: "ברכות", daf: "ג׳", ref: "Gittin.30")))
+            .previewContext(WidgetPreviewContext(family: .systemLarge))
+            .previewDisplayName("Large Widget")
+        todayEntryView(entry: DafYomiEntry(date: Date(), data: DafYomiData(tractate: "ברכות", daf: "ג׳", ref: "Gittin.30")))
+            .previewContext(WidgetPreviewContext(family: .systemExtraLarge))
+            .previewDisplayName("Extra Large Widget")
     }
 }

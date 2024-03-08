@@ -32,7 +32,7 @@ struct ContentView: View {
                 .padding(.horizontal)
                 
                 VStack {
-                    VStack{
+                    VStack {
                         if apiManager.dafYomiData != nil {
                             Text(apiManager.dafYomiData!.tractate)
                                 .font(Font.custom("SiddurOC-Black", size: 50))
@@ -50,6 +50,8 @@ struct ContentView: View {
                                 .progressViewStyle(CircularProgressViewStyle())
                         }
                     }.padding()
+                    MarkAsLearnt()
+                        .padding()
                 }
                 .frame(minWidth: 0, maxWidth: .infinity)
                 .background(.background)
@@ -72,7 +74,7 @@ struct ContentView: View {
                                         }
                                     }
                                 }
-                                .environment(\.font, Font.custom("SiddurOC-Regular", size: 28))
+                                .environment(\.font, Font.custom("SiddurOC-Regular", size: 26))
                             } else {
                                 Button(action: {
                                     apiManager.fetchText()
