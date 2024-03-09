@@ -24,8 +24,8 @@ struct todayLiveActivity: Widget {
         ActivityConfiguration(for: todayAttributes.self) { context in
             // Lock screen/banner UI goes here
             VStack {
-                Text("Hello")
-            }
+                DafGuage(dafYomiData: DafYomiData(tractate: "ברכות", daf: "ג׳", ref: "Gittin.30"))
+            }.padding()
             .activityBackgroundTint(Color.cyan)
             .activitySystemActionForegroundColor(Color.black)
 
@@ -34,22 +34,36 @@ struct todayLiveActivity: Widget {
                 // Expanded UI goes here.  Compose the expanded UI through
                 // various regions, like leading/trailing/center/bottom
                 DynamicIslandExpandedRegion(.leading) {
-                    Text("Leading")
+                    Text("בלאט גמרא")
                 }
                 DynamicIslandExpandedRegion(.trailing) {
-                    Text("Trailing")
+                    Text("נאך א")
                 }
                 DynamicIslandExpandedRegion(.bottom) {
-                    Text("Bottom")
+                    DafGuage(dafYomiData: DafYomiData(tractate: "ברכות", daf: "ג׳", ref: "Gittin.30"))
                     // more content
                 }
             } compactLeading: {
-                Text("L")
+                Text("דף ב׳")
             } compactTrailing: {
-                Text("T")
+                ProgressView(value: 45, total: 100) {
+                    Text("45")
+                }
+                .progressViewStyle(.circular)
+                .frame(height: 24)
+                .tint(Color.green)
+//              Text("ב״מ")
             } minimal: {
-                Text("Min")
+//                Text("ב׳")
+                ProgressView(value: 45, total: 100) {
+                    Text("45")
+                }
+                .progressViewStyle(.circular)
+                .frame(height: 24)
+                .tint(Color.green)
             }
+            .contentMargins(.leading, 0, for: .compactTrailing)
+//            .contentMargins(.trailing, 2, for: .compactTrailing)
             .widgetURL(URL(string: "http://www.apple.com"))
             .keylineTint(Color.red)
         }
