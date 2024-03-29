@@ -17,7 +17,7 @@
 		BE45EC212A3B8514008ACA2A /* TextResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE45EC202A3B8514008ACA2A /* TextResponse.swift */; };
 		BE45EC222A3B8514008ACA2A /* TextResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE45EC202A3B8514008ACA2A /* TextResponse.swift */; };
 		BE57CFA32A2D31ED0068E498 /* daf_yomiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFA22A2D31ED0068E498 /* daf_yomiApp.swift */; };
-		BE57CFA52A2D31ED0068E498 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFA42A2D31ED0068E498 /* ContentView.swift */; };
+		BE57CFA52A2D31ED0068E498 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFA42A2D31ED0068E498 /* TodayView.swift */; };
 		BE57CFAA2A2D31EE0068E498 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE57CFA92A2D31EE0068E498 /* Preview Assets.xcassets */; };
 		BE57CFB42A2D31EE0068E498 /* daf_yomiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFB32A2D31EE0068E498 /* daf_yomiTests.swift */; };
 		BE57CFBE2A2D31EE0068E498 /* daf_yomiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFBD2A2D31EE0068E498 /* daf_yomiUITests.swift */; };
@@ -25,13 +25,16 @@
 		BE57CFD32A2D35CF0068E498 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE57CFD22A2D35CF0068E498 /* WidgetKit.framework */; };
 		BE57CFD52A2D35CF0068E498 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE57CFD42A2D35CF0068E498 /* SwiftUI.framework */; };
 		BE57CFD82A2D35CF0068E498 /* todayBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFD72A2D35CF0068E498 /* todayBundle.swift */; };
-		BE57CFDA2A2D35CF0068E498 /* todayLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFD92A2D35CF0068E498 /* todayLiveActivity.swift */; };
-		BE57CFDC2A2D35CF0068E498 /* today.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFDB2A2D35CF0068E498 /* today.swift */; };
+		BE57CFDA2A2D35CF0068E498 /* todayDafLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFD92A2D35CF0068E498 /* todayDafLiveActivity.swift */; };
+		BE57CFDC2A2D35CF0068E498 /* todaysDaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFDB2A2D35CF0068E498 /* todaysDaf.swift */; };
 		BE57CFDF2A2D35D00068E498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE57CFDE2A2D35D00068E498 /* Assets.xcassets */; };
 		BE57CFE12A2D35D00068E498 /* today.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFDD2A2D35D00068E498 /* today.intentdefinition */; };
 		BE57CFE22A2D35D00068E498 /* today.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFDD2A2D35D00068E498 /* today.intentdefinition */; };
 		BE57CFE52A2D35D00068E498 /* todayExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BE57CFD02A2D35CF0068E498 /* todayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BEAC55302BB6F7380055EB11 /* ShasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC552F2BB6F7380055EB11 /* ShasView.swift */; };
 		BEC900002B9B149F00A6D2DA /* MarkAsLearnt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9FFFF2B9B149F00A6D2DA /* MarkAsLearnt.swift */; };
+		BEDA4AC62B9E341F002709E8 /* DafYomiAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDA4AC52B9E341F002709E8 /* DafYomiAttributes.swift */; };
+		BEDA4AC72B9E341F002709E8 /* DafYomiAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDA4AC52B9E341F002709E8 /* DafYomiAttributes.swift */; };
 		BEF5B69E2A3B1FCE007D74A8 /* DafYomiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF5B69D2A3B1FCE007D74A8 /* DafYomiData.swift */; };
 		BEF5B69F2A3B1FCE007D74A8 /* DafYomiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF5B69D2A3B1FCE007D74A8 /* DafYomiData.swift */; };
 		BEF5B6A12A3B1FD8007D74A8 /* helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF5B6A02A3B1FD8007D74A8 /* helpers.swift */; };
@@ -84,7 +87,7 @@
 		BE45EC202A3B8514008ACA2A /* TextResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextResponse.swift; sourceTree = "<group>"; };
 		BE57CF9F2A2D31ED0068E498 /* daf-yomi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "daf-yomi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE57CFA22A2D31ED0068E498 /* daf_yomiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daf_yomiApp.swift; sourceTree = "<group>"; };
-		BE57CFA42A2D31ED0068E498 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BE57CFA42A2D31ED0068E498 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
 		BE57CFA92A2D31EE0068E498 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BE57CFAF2A2D31EE0068E498 /* daf-yomiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "daf-yomiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE57CFB32A2D31EE0068E498 /* daf_yomiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daf_yomiTests.swift; sourceTree = "<group>"; };
@@ -95,13 +98,15 @@
 		BE57CFD22A2D35CF0068E498 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		BE57CFD42A2D35CF0068E498 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		BE57CFD72A2D35CF0068E498 /* todayBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todayBundle.swift; sourceTree = "<group>"; };
-		BE57CFD92A2D35CF0068E498 /* todayLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todayLiveActivity.swift; sourceTree = "<group>"; };
-		BE57CFDB2A2D35CF0068E498 /* today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = today.swift; sourceTree = "<group>"; };
+		BE57CFD92A2D35CF0068E498 /* todayDafLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todayDafLiveActivity.swift; sourceTree = "<group>"; };
+		BE57CFDB2A2D35CF0068E498 /* todaysDaf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todaysDaf.swift; sourceTree = "<group>"; };
 		BE57CFDD2A2D35D00068E498 /* today.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = today.intentdefinition; sourceTree = "<group>"; };
 		BE57CFDE2A2D35D00068E498 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE57CFE02A2D35D00068E498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEAC552F2BB6F7380055EB11 /* ShasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShasView.swift; sourceTree = "<group>"; };
 		BEB0D9892A3EE7D900E92FA9 /* daf-yomi.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "daf-yomi.entitlements"; sourceTree = "<group>"; };
 		BEC9FFFF2B9B149F00A6D2DA /* MarkAsLearnt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkAsLearnt.swift; sourceTree = "<group>"; };
+		BEDA4AC52B9E341F002709E8 /* DafYomiAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DafYomiAttributes.swift; sourceTree = "<group>"; };
 		BEF5B6962A3B1E48007D74A8 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		BEF5B69D2A3B1FCE007D74A8 /* DafYomiData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DafYomiData.swift; sourceTree = "<group>"; };
 		BEF5B6A02A3B1FD8007D74A8 /* helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = helpers.swift; sourceTree = "<group>"; };
@@ -188,10 +193,12 @@
 				BE45EC1C2A3B5B13008ACA2A /* Info.plist */,
 				BEB0D9892A3EE7D900E92FA9 /* daf-yomi.entitlements */,
 				BE57CFA22A2D31ED0068E498 /* daf_yomiApp.swift */,
-				BE57CFA42A2D31ED0068E498 /* ContentView.swift */,
+				BE57CFA42A2D31ED0068E498 /* TodayView.swift */,
 				BE57CFA82A2D31EE0068E498 /* Preview Content */,
 				BE45EC1D2A3B8002008ACA2A /* DafGuage.swift */,
 				BEC9FFFF2B9B149F00A6D2DA /* MarkAsLearnt.swift */,
+				BEDA4AC52B9E341F002709E8 /* DafYomiAttributes.swift */,
+				BEAC552F2BB6F7380055EB11 /* ShasView.swift */,
 			);
 			path = "daf-yomi";
 			sourceTree = "<group>";
@@ -237,8 +244,8 @@
 				BE57CFD72A2D35CF0068E498 /* todayBundle.swift */,
 				BEF5B69D2A3B1FCE007D74A8 /* DafYomiData.swift */,
 				BEF5B6A02A3B1FD8007D74A8 /* helpers.swift */,
-				BE57CFD92A2D35CF0068E498 /* todayLiveActivity.swift */,
-				BE57CFDB2A2D35CF0068E498 /* today.swift */,
+				BE57CFD92A2D35CF0068E498 /* todayDafLiveActivity.swift */,
+				BE57CFDB2A2D35CF0068E498 /* todaysDaf.swift */,
 				BE57CFDD2A2D35D00068E498 /* today.intentdefinition */,
 				BE57CFDE2A2D35D00068E498 /* Assets.xcassets */,
 				BE57CFE02A2D35D00068E498 /* Info.plist */,
@@ -416,12 +423,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEDA4AC62B9E341F002709E8 /* DafYomiAttributes.swift in Sources */,
 				BE57CFE22A2D35D00068E498 /* today.intentdefinition in Sources */,
 				BEF5B6A12A3B1FD8007D74A8 /* helpers.swift in Sources */,
 				BEC900002B9B149F00A6D2DA /* MarkAsLearnt.swift in Sources */,
 				BE45EC212A3B8514008ACA2A /* TextResponse.swift in Sources */,
-				BE57CFA52A2D31ED0068E498 /* ContentView.swift in Sources */,
+				BE57CFA52A2D31ED0068E498 /* TodayView.swift in Sources */,
 				BE45EC1E2A3B8002008ACA2A /* DafGuage.swift in Sources */,
+				BEAC55302BB6F7380055EB11 /* ShasView.swift in Sources */,
 				BE57CFA32A2D31ED0068E498 /* daf_yomiApp.swift in Sources */,
 				BEF5B69E2A3B1FCE007D74A8 /* DafYomiData.swift in Sources */,
 			);
@@ -448,12 +457,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEDA4AC72B9E341F002709E8 /* DafYomiAttributes.swift in Sources */,
 				BE57CFE12A2D35D00068E498 /* today.intentdefinition in Sources */,
 				BE45EC222A3B8514008ACA2A /* TextResponse.swift in Sources */,
 				BEF5B6A22A3B1FD8007D74A8 /* helpers.swift in Sources */,
 				BE45EC1F2A3B8002008ACA2A /* DafGuage.swift in Sources */,
-				BE57CFDA2A2D35CF0068E498 /* todayLiveActivity.swift in Sources */,
-				BE57CFDC2A2D35CF0068E498 /* today.swift in Sources */,
+				BE57CFDA2A2D35CF0068E498 /* todayDafLiveActivity.swift in Sources */,
+				BE57CFDC2A2D35CF0068E498 /* todaysDaf.swift in Sources */,
 				BEF5B69F2A3B1FCE007D74A8 /* DafYomiData.swift in Sources */,
 				BE57CFD82A2D35CF0068E498 /* todayBundle.swift in Sources */,
 			);

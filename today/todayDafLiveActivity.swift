@@ -9,22 +9,12 @@ import ActivityKit
 import WidgetKit
 import SwiftUI
 
-struct todayAttributes: ActivityAttributes {
-    public struct ContentState: Codable, Hashable {
-        // Dynamic stateful properties about your activity go here!
-        var value: Int
-    }
-
-    // Fixed non-changing properties about your activity go here!
-    var name: String
-}
-
-struct todayLiveActivity: Widget {
+struct todayDafLiveActivity: Widget {
     var body: some WidgetConfiguration {
-        ActivityConfiguration(for: todayAttributes.self) { context in
+        ActivityConfiguration(for: TodaysDafAttributes.self) { context in
             // Lock screen/banner UI goes here
             VStack {
-                DafGuage(dafYomiData: DafYomiData(tractate: "ברכות", daf: "ג׳", ref: "Gittin.30"))
+                DafGuage(dafYomiData: context.attributes.daf)
             }.padding()
             .activityBackgroundTint(Color.cyan)
             .activitySystemActionForegroundColor(Color.black)
@@ -40,7 +30,7 @@ struct todayLiveActivity: Widget {
                     Text("נאך א")
                 }
                 DynamicIslandExpandedRegion(.bottom) {
-                    DafGuage(dafYomiData: DafYomiData(tractate: "ברכות", daf: "ג׳", ref: "Gittin.30"))
+                    DafGuage(dafYomiData: context.attributes.daf)
                     // more content
                 }
             } compactLeading: {
@@ -71,8 +61,8 @@ struct todayLiveActivity: Widget {
 }
 
 struct todayLiveActivity_Previews: PreviewProvider {
-    static let attributes = todayAttributes(name: "Me")
-    static let contentState = todayAttributes.ContentState(value: 3)
+    static let attributes = TodaysDafAttributes(daf: DafYomiData(tractate: "ברכות", daf: "ג׳", ref: "Gittin.30"))
+    static let contentState = TodaysDafAttributes.ContentState(percentageLearnt: 45)
 
     static var previews: some View {
         attributes

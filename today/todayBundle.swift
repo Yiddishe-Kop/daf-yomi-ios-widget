@@ -11,7 +11,7 @@ import SwiftUI
 @main
 struct todayBundle: WidgetBundle {
     var body: some Widget {
-        today()
-        todayLiveActivity()
+        todaysDaf()
+        todayDafLiveActivity()
     }
 }

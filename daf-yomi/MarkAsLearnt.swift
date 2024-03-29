@@ -6,7 +6,9 @@
 //
 
 import SwiftUI
+import ActivityKit
 import UserNotifications
+
 
 struct CheckboxToggleStyle: ToggleStyle {
     var callback: () -> Void
@@ -39,14 +41,18 @@ struct CheckboxToggleStyle: ToggleStyle {
 }
 
 struct MarkAsLearnt: View {
+    var daf: DafYomiData
     @State private var isDafLearnt: Bool = false
     @State private var showAlert = false
     @State private var alertMessage = ""
-        
+    
+    @StateObject var viewModel = DafViewModel()
+    
     func markAsLearned() {
         // Mark today's Daf as learned
         if isDafLearnt {
             UserDefaults.standard.set(Date(), forKey: "LastLearnedDate")
+            viewModel.startLiveActivity(daf: daf)
         } else {
             UserDefaults.standard.removeObject(forKey: "LastLearnedDate")
         }
@@ -147,4 +153,29 @@ struct MarkAsLearnt: View {
                 Alert(title: Text("Alert"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
             }
         }
+}
+
+final class DafViewModel: ObservableObject {
+    private var currentActivity: Activity<TodaysDafAttributes>? = nil
+    
+    func startLiveActivity(daf: DafYomiData) {
+        let dafAttributes = TodaysDafAttributes(daf: daf)
+        
+        let initialState = TodaysDafAttributes.ContentState(percentageLearnt: 45)
+        
+        let content = ActivityContent(state: initialState, staleDate: nil)
+        
+        do {
+            
+            let activity = try Activity.request(
+                attributes: dafAttributes,
+                content: content,
+                pushType: nil
+            )
+            
+            self.currentActivity = activity
+        } catch {
+            print(String(describing: error))
+        }
+    }
 }

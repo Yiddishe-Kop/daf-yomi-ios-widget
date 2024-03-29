@@ -104,7 +104,7 @@ struct todayEntryView : View {
     }
 }
 
-struct today: Widget {
+struct todaysDaf: Widget {
     let kind: String = "today"
 
     var body: some WidgetConfiguration {

@@ -11,7 +11,23 @@ import SwiftUI
 struct daf_yomiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                Group {
+                    TodayView()
+                        .tabItem {
+                            Label("Today", systemImage: "doc.text.image")
+                        }
+                    NavigationStack {
+                        ShasView()
+                    }
+                    .tabItem {
+                        Label("Shas", systemImage: "books.vertical")
+                    }
+                }
+                .toolbarBackground(.gray800, for: .tabBar)
+                .toolbarBackground(.visible, for: .tabBar)
+                .toolbarColorScheme(.dark, for: .tabBar)
+            }
         }
     }
 }

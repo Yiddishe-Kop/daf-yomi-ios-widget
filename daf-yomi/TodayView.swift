@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct TodayView: View {
     @StateObject private var apiManager = APIManager()
 
     var body: some View {
@@ -44,14 +44,13 @@ struct ContentView: View {
                                 .offset(x: 0, y: -40)
                                 .padding(.top, -100)
                                 .padding(.bottom, -40)
-                            
+                            MarkAsLearnt(daf: apiManager.dafYomiData!)
+                                .padding()
                         } else {
                             ProgressView("טוען...")
                                 .progressViewStyle(CircularProgressViewStyle())
                         }
                     }.padding()
-                    MarkAsLearnt()
-                        .padding()
                 }
                 .frame(minWidth: 0, maxWidth: .infinity)
                 .background(.background)
@@ -131,8 +130,8 @@ func removeHTMLTags(_ htmlString: String) -> String? {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct TodayView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        TodayView()
     }
 }
