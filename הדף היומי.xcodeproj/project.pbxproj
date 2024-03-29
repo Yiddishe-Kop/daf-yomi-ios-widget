@@ -32,6 +32,10 @@
 		BE57CFE22A2D35D00068E498 /* today.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = BE57CFDD2A2D35D00068E498 /* today.intentdefinition */; };
 		BE57CFE52A2D35D00068E498 /* todayExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BE57CFD02A2D35CF0068E498 /* todayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BEAC55302BB6F7380055EB11 /* ShasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC552F2BB6F7380055EB11 /* ShasView.swift */; };
+		BEAC55322BB6FE650055EB11 /* Shas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC55312BB6FE650055EB11 /* Shas.swift */; };
+		BEAC55332BB6FEE50055EB11 /* Shas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC55312BB6FE650055EB11 /* Shas.swift */; };
+		BEAC55352BB701DC0055EB11 /* TractateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC55342BB701030055EB11 /* TractateView.swift */; };
+		BEAC55362BB701DD0055EB11 /* TractateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC55342BB701030055EB11 /* TractateView.swift */; };
 		BEC900002B9B149F00A6D2DA /* MarkAsLearnt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9FFFF2B9B149F00A6D2DA /* MarkAsLearnt.swift */; };
 		BEDA4AC62B9E341F002709E8 /* DafYomiAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDA4AC52B9E341F002709E8 /* DafYomiAttributes.swift */; };
 		BEDA4AC72B9E341F002709E8 /* DafYomiAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDA4AC52B9E341F002709E8 /* DafYomiAttributes.swift */; };
@@ -104,6 +108,8 @@
 		BE57CFDE2A2D35D00068E498 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE57CFE02A2D35D00068E498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEAC552F2BB6F7380055EB11 /* ShasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShasView.swift; sourceTree = "<group>"; };
+		BEAC55312BB6FE650055EB11 /* Shas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shas.swift; sourceTree = "<group>"; };
+		BEAC55342BB701030055EB11 /* TractateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TractateView.swift; sourceTree = "<group>"; };
 		BEB0D9892A3EE7D900E92FA9 /* daf-yomi.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "daf-yomi.entitlements"; sourceTree = "<group>"; };
 		BEC9FFFF2B9B149F00A6D2DA /* MarkAsLearnt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkAsLearnt.swift; sourceTree = "<group>"; };
 		BEDA4AC52B9E341F002709E8 /* DafYomiAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DafYomiAttributes.swift; sourceTree = "<group>"; };
@@ -198,6 +204,7 @@
 				BE45EC1D2A3B8002008ACA2A /* DafGuage.swift */,
 				BEC9FFFF2B9B149F00A6D2DA /* MarkAsLearnt.swift */,
 				BEDA4AC52B9E341F002709E8 /* DafYomiAttributes.swift */,
+				BEAC55342BB701030055EB11 /* TractateView.swift */,
 				BEAC552F2BB6F7380055EB11 /* ShasView.swift */,
 			);
 			path = "daf-yomi";
@@ -250,6 +257,7 @@
 				BE57CFDE2A2D35D00068E498 /* Assets.xcassets */,
 				BE57CFE02A2D35D00068E498 /* Info.plist */,
 				BE45EC202A3B8514008ACA2A /* TextResponse.swift */,
+				BEAC55312BB6FE650055EB11 /* Shas.swift */,
 			);
 			path = today;
 			sourceTree = "<group>";
@@ -431,8 +439,10 @@
 				BE57CFA52A2D31ED0068E498 /* TodayView.swift in Sources */,
 				BE45EC1E2A3B8002008ACA2A /* DafGuage.swift in Sources */,
 				BEAC55302BB6F7380055EB11 /* ShasView.swift in Sources */,
+				BEAC55352BB701DC0055EB11 /* TractateView.swift in Sources */,
 				BE57CFA32A2D31ED0068E498 /* daf_yomiApp.swift in Sources */,
 				BEF5B69E2A3B1FCE007D74A8 /* DafYomiData.swift in Sources */,
+				BEAC55322BB6FE650055EB11 /* Shas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +471,8 @@
 				BE57CFE12A2D35D00068E498 /* today.intentdefinition in Sources */,
 				BE45EC222A3B8514008ACA2A /* TextResponse.swift in Sources */,
 				BEF5B6A22A3B1FD8007D74A8 /* helpers.swift in Sources */,
+				BEAC55362BB701DD0055EB11 /* TractateView.swift in Sources */,
+				BEAC55332BB6FEE50055EB11 /* Shas.swift in Sources */,
 				BE45EC1F2A3B8002008ACA2A /* DafGuage.swift in Sources */,
 				BE57CFDA2A2D35CF0068E498 /* todayDafLiveActivity.swift in Sources */,
 				BE57CFDC2A2D35CF0068E498 /* todaysDaf.swift in Sources */,

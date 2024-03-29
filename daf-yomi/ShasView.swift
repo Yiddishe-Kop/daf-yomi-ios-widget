@@ -9,19 +9,40 @@ import SwiftUI
 
 struct ShasView: View {
 
-    let items = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"]
+    let tractates = Shas.tractates
 
     var body: some View {
         List {
-            ForEach(items, id: \.self) { item in
-                Text(item)
-            }
-        }
+           ForEach(Array(tractates.keys), id: \.self) { name in
+               let number = tractates[name] ?? 0
+               NavigationLink(destination: TractateView(tractate: name, totalDafim: number  )) {   
+                   HStack {
+                       Text(name)
+                           .font(Font.custom("SiddurOC-Black", size: 32))
+                           .padding(.top, -12)
+                       Spacer()
+                       Badge(number: number)
+                   }
+               }
+           }
+       }
         .listStyle(.automatic)
         .navigationTitle("Shas")
     }
 }
 
+struct Badge: View {
+    let number: Int
+    
+    var body: some View {
+        Text("\(number)")
+            .font(.caption)
+            .foregroundColor(.gray800)
+            .padding(5)
+            .background(.gray200)
+            .cornerRadius(20)
+    }
+}
 
 struct ShasView_Previews: PreviewProvider {
     static var previews: some View {
