@@ -21,6 +21,8 @@ struct TextView: View {
             }
         }
         .environment(\.font, Font.custom("SiddurOC-Regular", size: 26))
+        .multilineTextAlignment(.trailing)
+        .textSelection(.enabled)
     }
 }
 

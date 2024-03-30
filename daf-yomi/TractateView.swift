@@ -13,7 +13,7 @@ struct TractateView: View {
     let totalDafim: Int
 
     var body: some View {
-        let items = (1...totalDafim).map { Shas.arabicToHebrew(num: $0+1) }
+        let items = (1...totalDafim-1).map { Shas.arabicToHebrew(num: $0+1) }
 
         ScrollView {
             LazyVGrid(columns: Array(repeating: GridItem(), count: 5), spacing: 10) {

@@ -13,8 +13,8 @@ struct ShasView: View {
 
     var body: some View {
         List {
-           ForEach(Array(tractates.keys), id: \.self) { name in
-               let number = tractates[name] ?? 0
+           ForEach(tractates, id: \.self) { name in
+               let number = Shas.dafimCount[name] ?? 0
                NavigationLink(destination: TractateView(tractate: name, totalDafim: number  )) {   
                    HStack {
                        Text(name)
@@ -27,7 +27,7 @@ struct ShasView: View {
            }
        }
         .listStyle(.automatic)
-        .navigationTitle("Shas")
+        .navigationTitle("תלמוד בבלי")
     }
 }
 

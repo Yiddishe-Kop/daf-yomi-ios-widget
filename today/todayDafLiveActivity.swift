@@ -16,13 +16,11 @@ struct todayDafLiveActivity: Widget {
             VStack {
                 DafGuage(dafYomiData: context.attributes.daf)
             }.padding()
-            .activityBackgroundTint(Color.cyan)
-            .activitySystemActionForegroundColor(Color.black)
+            .activityBackgroundTint(Color.accent.opacity(0.1))
+            .activitySystemActionForegroundColor(Color.accent)
 
         } dynamicIsland: { context in
             DynamicIsland {
-                // Expanded UI goes here.  Compose the expanded UI through
-                // various regions, like leading/trailing/center/bottom
                 DynamicIslandExpandedRegion(.leading) {
                     Text("בלאט גמרא")
                 }
@@ -34,28 +32,24 @@ struct todayDafLiveActivity: Widget {
                     // more content
                 }
             } compactLeading: {
-                Text("דף ב׳")
+                Text("דף \(context.attributes.daf.daf)")
             } compactTrailing: {
-                ProgressView(value: 45, total: 100) {
-                    Text("45")
-                }
-                .progressViewStyle(.circular)
-                .frame(height: 24)
-                .tint(Color.green)
-//              Text("ב״מ")
+//                ProgressView(value: 45, total: 100) {
+//                    Text("45")
+//                }
+//                .progressViewStyle(.circular)
+//                .frame(height: 24)
+//                .tint(Color.green)
+              Text(context.attributes.daf.tractate)
             } minimal: {
-//                Text("ב׳")
-                ProgressView(value: 45, total: 100) {
-                    Text("45")
-                }
-                .progressViewStyle(.circular)
-                .frame(height: 24)
-                .tint(Color.green)
+                Text(context.attributes.daf.daf)
+                    .font(Font.custom("SiddurOC-Black", size: 30))
+                    .baselineOffset(12)
             }
             .contentMargins(.leading, 0, for: .compactTrailing)
 //            .contentMargins(.trailing, 2, for: .compactTrailing)
             .widgetURL(URL(string: "http://www.apple.com"))
-            .keylineTint(Color.red)
+            .keylineTint(Color.accent)
         }
     }
 }

@@ -13,7 +13,7 @@ struct DafYomiData: Codable {
     let ref: String
     
     func totalDafim() -> Int {
-        return Shas.tractates[tractate] ?? 0
+        return Shas.dafimCount[tractate] ?? 0
     }
     
     func dafNumber() -> Int {

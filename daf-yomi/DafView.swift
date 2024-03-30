@@ -16,13 +16,20 @@ struct DafView: View {
         ScrollView {
             if (!(dafController.heText.first?.isEmpty ?? false)) {
                 TextView(heText: dafController.heText)
+                    .padding()
             } else {
                 ProgressView("טוען...")
                     .progressViewStyle(CircularProgressViewStyle())
             }
         }.navigationTitle("דף \(daf)")
-            .onAppear {
-                 dafController.fetchText(tractate: tractate, daf: daf)
-            }
+        .onAppear {
+             dafController.fetchText(tractate: tractate, daf: daf)
+        }
+    }
+}
+
+struct DafView_Previews: PreviewProvider {
+    static var previews: some View {
+        DafView(tractate: "סוכה", daf: "ב")
     }
 }
