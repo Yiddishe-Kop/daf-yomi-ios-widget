@@ -23,7 +23,7 @@ struct Provider: TimelineProvider {
     func getTimeline(in context: Context, completion: @escaping (Timeline<DafYomiEntry>) -> Void) {
         var entries: [DafYomiEntry] = []
                 
-        let apiManager = APIManager()
+        let apiManager = TodayController()
         apiManager.fetchDafYomi {
             let entry = DafYomiEntry(date: Date(), data: apiManager.dafYomiData)
             entries.append(entry)

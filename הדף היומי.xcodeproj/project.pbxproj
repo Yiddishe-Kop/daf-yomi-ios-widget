@@ -35,7 +35,14 @@
 		BEAC55322BB6FE650055EB11 /* Shas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC55312BB6FE650055EB11 /* Shas.swift */; };
 		BEAC55332BB6FEE50055EB11 /* Shas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC55312BB6FE650055EB11 /* Shas.swift */; };
 		BEAC55352BB701DC0055EB11 /* TractateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC55342BB701030055EB11 /* TractateView.swift */; };
-		BEAC55362BB701DD0055EB11 /* TractateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC55342BB701030055EB11 /* TractateView.swift */; };
+		BEC5D9092BB8940D00D5F67E /* DafView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC5D9082BB8940D00D5F67E /* DafView.swift */; };
+		BEC5D90D2BB89D6D00D5F67E /* TodayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC5D90C2BB89D6D00D5F67E /* TodayController.swift */; };
+		BEC5D90E2BB89DFF00D5F67E /* TodayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC5D90C2BB89D6D00D5F67E /* TodayController.swift */; };
+		BEC5D9102BB89EAF00D5F67E /* SefariaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC5D90F2BB89EAF00D5F67E /* SefariaClient.swift */; };
+		BEC5D9112BB89EAF00D5F67E /* SefariaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC5D90F2BB89EAF00D5F67E /* SefariaClient.swift */; };
+		BEC5D9132BB8A57D00D5F67E /* DafController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC5D9122BB8A57D00D5F67E /* DafController.swift */; };
+		BEC5D9152BB8A86700D5F67E /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC5D9142BB8A86700D5F67E /* TextView.swift */; };
+		BEC5D9162BB8A86700D5F67E /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC5D9142BB8A86700D5F67E /* TextView.swift */; };
 		BEC900002B9B149F00A6D2DA /* MarkAsLearnt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9FFFF2B9B149F00A6D2DA /* MarkAsLearnt.swift */; };
 		BEDA4AC62B9E341F002709E8 /* DafYomiAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDA4AC52B9E341F002709E8 /* DafYomiAttributes.swift */; };
 		BEDA4AC72B9E341F002709E8 /* DafYomiAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDA4AC52B9E341F002709E8 /* DafYomiAttributes.swift */; };
@@ -111,6 +118,11 @@
 		BEAC55312BB6FE650055EB11 /* Shas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shas.swift; sourceTree = "<group>"; };
 		BEAC55342BB701030055EB11 /* TractateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TractateView.swift; sourceTree = "<group>"; };
 		BEB0D9892A3EE7D900E92FA9 /* daf-yomi.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "daf-yomi.entitlements"; sourceTree = "<group>"; };
+		BEC5D9082BB8940D00D5F67E /* DafView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DafView.swift; sourceTree = "<group>"; };
+		BEC5D90C2BB89D6D00D5F67E /* TodayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayController.swift; sourceTree = "<group>"; };
+		BEC5D90F2BB89EAF00D5F67E /* SefariaClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SefariaClient.swift; sourceTree = "<group>"; };
+		BEC5D9122BB8A57D00D5F67E /* DafController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DafController.swift; sourceTree = "<group>"; };
+		BEC5D9142BB8A86700D5F67E /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		BEC9FFFF2B9B149F00A6D2DA /* MarkAsLearnt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkAsLearnt.swift; sourceTree = "<group>"; };
 		BEDA4AC52B9E341F002709E8 /* DafYomiAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DafYomiAttributes.swift; sourceTree = "<group>"; };
 		BEF5B6962A3B1E48007D74A8 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -196,6 +208,7 @@
 		BE57CFA12A2D31ED0068E498 /* daf-yomi */ = {
 			isa = PBXGroup;
 			children = (
+				BEC5D90B2BB89D5C00D5F67E /* Controllers */,
 				BE45EC1C2A3B5B13008ACA2A /* Info.plist */,
 				BEB0D9892A3EE7D900E92FA9 /* daf-yomi.entitlements */,
 				BE57CFA22A2D31ED0068E498 /* daf_yomiApp.swift */,
@@ -206,6 +219,9 @@
 				BEDA4AC52B9E341F002709E8 /* DafYomiAttributes.swift */,
 				BEAC55342BB701030055EB11 /* TractateView.swift */,
 				BEAC552F2BB6F7380055EB11 /* ShasView.swift */,
+				BEC5D9082BB8940D00D5F67E /* DafView.swift */,
+				BEC5D90F2BB89EAF00D5F67E /* SefariaClient.swift */,
+				BEC5D9142BB8A86700D5F67E /* TextView.swift */,
 			);
 			path = "daf-yomi";
 			sourceTree = "<group>";
@@ -260,6 +276,15 @@
 				BEAC55312BB6FE650055EB11 /* Shas.swift */,
 			);
 			path = today;
+			sourceTree = "<group>";
+		};
+		BEC5D90B2BB89D5C00D5F67E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BEC5D90C2BB89D6D00D5F67E /* TodayController.swift */,
+				BEC5D9122BB8A57D00D5F67E /* DafController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,6 +456,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEC5D9102BB89EAF00D5F67E /* SefariaClient.swift in Sources */,
+				BEC5D9092BB8940D00D5F67E /* DafView.swift in Sources */,
 				BEDA4AC62B9E341F002709E8 /* DafYomiAttributes.swift in Sources */,
 				BE57CFE22A2D35D00068E498 /* today.intentdefinition in Sources */,
 				BEF5B6A12A3B1FD8007D74A8 /* helpers.swift in Sources */,
@@ -439,8 +466,11 @@
 				BE57CFA52A2D31ED0068E498 /* TodayView.swift in Sources */,
 				BE45EC1E2A3B8002008ACA2A /* DafGuage.swift in Sources */,
 				BEAC55302BB6F7380055EB11 /* ShasView.swift in Sources */,
+				BEC5D90D2BB89D6D00D5F67E /* TodayController.swift in Sources */,
+				BEC5D9152BB8A86700D5F67E /* TextView.swift in Sources */,
 				BEAC55352BB701DC0055EB11 /* TractateView.swift in Sources */,
 				BE57CFA32A2D31ED0068E498 /* daf_yomiApp.swift in Sources */,
+				BEC5D9132BB8A57D00D5F67E /* DafController.swift in Sources */,
 				BEF5B69E2A3B1FCE007D74A8 /* DafYomiData.swift in Sources */,
 				BEAC55322BB6FE650055EB11 /* Shas.swift in Sources */,
 			);
@@ -469,10 +499,12 @@
 			files = (
 				BEDA4AC72B9E341F002709E8 /* DafYomiAttributes.swift in Sources */,
 				BE57CFE12A2D35D00068E498 /* today.intentdefinition in Sources */,
+				BEC5D90E2BB89DFF00D5F67E /* TodayController.swift in Sources */,
+				BEC5D9162BB8A86700D5F67E /* TextView.swift in Sources */,
 				BE45EC222A3B8514008ACA2A /* TextResponse.swift in Sources */,
 				BEF5B6A22A3B1FD8007D74A8 /* helpers.swift in Sources */,
-				BEAC55362BB701DD0055EB11 /* TractateView.swift in Sources */,
 				BEAC55332BB6FEE50055EB11 /* Shas.swift in Sources */,
+				BEC5D9112BB89EAF00D5F67E /* SefariaClient.swift in Sources */,
 				BE45EC1F2A3B8002008ACA2A /* DafGuage.swift in Sources */,
 				BE57CFDA2A2D35CF0068E498 /* todayDafLiveActivity.swift in Sources */,
 				BE57CFDC2A2D35CF0068E498 /* todaysDaf.swift in Sources */,

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TodayView: View {
-    @StateObject private var apiManager = APIManager()
+    @StateObject private var todayController = TodayController()
 
     var body: some View {
         ScrollView {
@@ -21,8 +21,8 @@ struct TodayView: View {
                     Text("Todays Daf")
                         .font(.title2)
                     Spacer()
-                    if apiManager.dafYomiData != nil {
-                        DafGuage(dafYomiData: apiManager.dafYomiData!)
+                    if todayController.dafYomiData != nil {
+                        DafGuage(dafYomiData: todayController.dafYomiData!)
                             .padding()
                     }
                     
@@ -33,18 +33,18 @@ struct TodayView: View {
                 
                 VStack {
                     VStack {
-                        if apiManager.dafYomiData != nil {
-                            Text(apiManager.dafYomiData!.tractate)
+                        if todayController.dafYomiData != nil {
+                            Text(todayController.dafYomiData!.tractate)
                                 .font(Font.custom("SiddurOC-Black", size: 50))
                                 .foregroundColor(.accentColor)
                                 .padding(.top, -20)
-                            Text(apiManager.dafYomiData!.daf)
+                            Text(todayController.dafYomiData!.daf)
                                 .font(Font.custom("SiddurOC-Black", size: 200))
                                 .foregroundColor(Color("gray800"))
                                 .offset(x: 0, y: -40)
                                 .padding(.top, -100)
                                 .padding(.bottom, -40)
-                            MarkAsLearnt(daf: apiManager.dafYomiData!)
+                            MarkAsLearnt(daf: todayController.dafYomiData!)
                                 .padding()
                         } else {
                             ProgressView("טוען...")
@@ -59,24 +59,15 @@ struct TodayView: View {
                 .padding(.bottom, 5)
                 
                 
-                if apiManager.dafYomiData != nil {
+                if todayController.dafYomiData != nil {
                     // Daf Text
                     VStack {
                         VStack(alignment: .leading) {
-                            if (!(apiManager.heText.first?.isEmpty ?? false)) {
-                                ForEach(apiManager.heText, id: \.self) { page in
-                                    ForEach(page, id: \.self) { line in
-                                        if let plainText = removeHTMLTags(line) {
-                                            Text(plainText)
-                                        } else {
-                                            Text("Error parsing HTML")
-                                        }
-                                    }
-                                }
-                                .environment(\.font, Font.custom("SiddurOC-Regular", size: 26))
+                            if (!(todayController.heText.first?.isEmpty ?? false)) {
+                                TextView(heText: todayController.heText)
                             } else {
                                 Button(action: {
-                                    apiManager.fetchText()
+                                     todayController.fetchText()
                                 }) {
                                     HStack {
                                         Text("למד עכשיו")
@@ -106,27 +97,10 @@ struct TodayView: View {
             }
             .frame(minWidth: 0, maxWidth: .infinity)
             .onAppear {
-                apiManager.fetchDafYomi()
+                todayController.fetchDafYomi()
             }
         }
         .background(Color("gray200"))
-    }
-}
-
-// Function to remove HTML tags from the string
-func removeHTMLTags(_ htmlString: String) -> String? {
-    do {
-        // Regular expression to remove HTML tags
-        let regex = try NSRegularExpression(pattern: "<[^>]+>", options: .caseInsensitive)
-        // Replace HTML tags with an empty string
-        let plainText = regex.stringByReplacingMatches(in: htmlString,
-                                                        options: [],
-                                                        range: NSRange(location: 0, length: htmlString.utf16.count),
-                                                        withTemplate: "")
-        return plainText
-    } catch {
-        print("Error:", error)
-        return nil
     }
 }
 

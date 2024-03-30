@@ -13,23 +13,30 @@ struct TractateView: View {
     let totalDafim: Int
 
     var body: some View {
-        List {
-            ForEach(1...totalDafim, id: \.self) { dafNumber in
-               HStack {
-                   Text("דף \(dafNumber)")
-                       .font(Font.custom("SiddurOC-Black", size: 32))
-                       .padding(.top, -12)
-                   Spacer()
-               }
-           }
-       }
-        .listStyle(.automatic)
-        .navigationTitle(tractate)
+        let items = (1...totalDafim).map { Shas.arabicToHebrew(num: $0+1) }
+
+        ScrollView {
+            LazyVGrid(columns: Array(repeating: GridItem(), count: 5), spacing: 10) {
+                ForEach(items, id: \.self) { item in
+                    NavigationLink(destination: DafView(tractate: tractate, daf: item)) {
+                        Text(item)
+                            .font(Font.custom("SiddurOC-Black", size: 42))
+                            .padding(.top, -18)
+                            .padding(.vertical, 8)
+                            .frame(maxWidth: .infinity)
+                            .background(Color.gray200)
+                            .foregroundColor(.gray800)
+                            .cornerRadius(10)
+                    }
+                }
+            }
+            .padding()
+        }.navigationTitle("מסכת \(tractate)")
     }
 }
 
 struct TractateView_Previews: PreviewProvider {
     static var previews: some View {
-        TractateView(tractate: "סוכה", totalDafim: 55)
+        TractateView(tractate: "יומא", totalDafim: 55)
     }
 }

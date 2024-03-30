@@ -24,9 +24,9 @@ struct daf_yomiApp: App {
                         Label("Shas", systemImage: "books.vertical")
                     }
                 }
-                .toolbarBackground(.gray800, for: .tabBar)
-                .toolbarBackground(.visible, for: .tabBar)
-                .toolbarColorScheme(.dark, for: .tabBar)
+//                .toolbarBackground(.gray800, for: .tabBar)
+//                .toolbarBackground(.visible, for: .tabBar)
+//                .toolbarColorScheme(.dark, for: .tabBar)
             }
         }
     }
