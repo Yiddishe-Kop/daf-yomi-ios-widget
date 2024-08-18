@@ -16,27 +16,28 @@ struct DafYomiEntry: TimelineEntry {
 
 struct Provider: TimelineProvider {
     func getSnapshot(in context: Context, completion: @escaping (DafYomiEntry) -> Void) {
-        let entry = DafYomiEntry(date: Date(), data: nil)
+        let entry = DafYomiEntry(date: Date(), data: DafYomiData(tractate: "ברכות", daf: "ב.", ref: "ברכות.ב"))
         completion(entry)
     }
     
     func getTimeline(in context: Context, completion: @escaping (Timeline<DafYomiEntry>) -> Void) {
         var entries: [DafYomiEntry] = []
-                
+        
         let apiManager = TodayController()
         apiManager.fetchDafYomi {
-            let entry = DafYomiEntry(date: Date(), data: apiManager.dafYomiData)
+            let dafYomiData = apiManager.dafYomiData ?? DafYomiData(tractate: "ברכות", daf: "ב.", ref: "ברכות.ב")
+            let entry = DafYomiEntry(date: Date(), data: dafYomiData)
             entries.append(entry)
             
-            let tommorow = Calendar.current.date(byAdding: .day, value: 1, to: Date())!
-            let midnight = Calendar.current.startOfDay(for: tommorow)
+            let tomorrow = Calendar.current.date(byAdding: .day, value: 1, to: Date())!
+            let midnight = Calendar.current.startOfDay(for: tomorrow)
             let timeline = Timeline(entries: entries, policy: .after(midnight))
             completion(timeline)
         }
     }
     
     func placeholder(in context: Context) -> DafYomiEntry {
-        DafYomiEntry(date: Date(), data: nil)
+        DafYomiEntry(date: Date(), data: DafYomiData(tractate: "ברכות", daf: "ב.", ref: "ברכות.ב"))
     }
 }
 
@@ -46,61 +47,43 @@ struct todayEntryView : View {
     @Environment(\.widgetFamily) var family
     
     var body: some View {
-        
-        if ((entry.data) == nil) {
-            Text("Loading...")
-        } else {
-            switch family {
-                case .accessoryInline:
+        widgetContent
+            .widgetBackground(backgroundView: Color.clear)
+    }
+    
+    @ViewBuilder
+    var widgetContent: some View {
+        switch family {
+            case .accessoryInline:
+                HStack {
+                    Image(systemName: "character.book.closed.fill.he")
+                    Text(entry.data!.tractate + " דף " + entry.data!.daf)
+                }
+            case .accessoryCircular:
+                DafGuage(dafYomiData: entry.data!)
+            case .accessoryRectangular:
+                HStack{
+                    Text(entry.data!.tractate + " דף")
+                        .font(Font.custom("SiddurOC-Regular", size: 25))
+                    Text(String(entry.data!.daf))
+                        .font(Font.custom("SiddurOC-Black", size: 25))
+                }.environment(\.layoutDirection, .rightToLeft)
+            case .systemSmall:
+                VStack {
+                    Spacer()
                     HStack {
-                        Image(systemName: "character.book.closed.fill.he")
-                        Text(entry.data!.tractate + " דף " + String(entry.data!.daf))
-                    }
-                case .accessoryCircular:
-                    DafGuage(dafYomiData: entry.data!)
-                    .containerBackground(for: .widget) {
-                        Color.gray
-                    }
-                case .accessoryRectangular:
-                    HStack{
-                        Text(entry.data!.tractate + " דף")
-                            .font(Font.custom("SiddurOC-Regular", size: 25))
-                        Text(String(entry.data!.daf))
-                            .font(Font.custom("SiddurOC-Black", size: 25))
-                    }.environment(\.layoutDirection, .rightToLeft)
-                    .containerBackground(for: .widget) {
-                        Color.gray
-                    }
-                case .systemSmall:
-                    VStack {
                         Spacer()
-                        HStack {
-                            Spacer()
-                            DafGuage(dafYomiData: entry.data!)
-                        }
-                    }.containerBackground(for: .widget) {
-                        Color.clear
+                        DafGuage(dafYomiData: entry.data!)
                     }
-                case .systemMedium:
-                    DafGuage(dafYomiData: entry.data!)
-                        .containerBackground(for: .widget) {
-                            Color.white.opacity(0.25)
-                        }
-                case .systemLarge:
-                    DafGuage(dafYomiData: entry.data!)
-                        .containerBackground(for: .widget) {
-                            Color.white
-                        }
-                case .systemExtraLarge:
-                    DafGuage(dafYomiData: entry.data!)
-                        .containerBackground(for: .widget) {
-                            Color.white
-                        }
-
-            default:
-                    Text(entry.data!.tractate + " דף " + String(entry.data!.daf))
-            }
+                }
+            case .systemMedium:
+                DafGuage(dafYomiData: entry.data!)
+            case .systemLarge, .systemExtraLarge:
+                DafGuage(dafYomiData: entry.data!)
+            @unknown default:
+                Text(entry.data!.tractate + " דף " + String(entry.data!.daf))
         }
+        
     }
 }
 
@@ -108,21 +91,32 @@ struct todaysDaf: Widget {
     let kind: String = "today"
 
     var body: some WidgetConfiguration {
-            StaticConfiguration(kind: "MyWidget", provider: Provider()) { entry in
-                todayEntryView(entry: entry)
-            }
-            .configurationDisplayName("הדף היומי")
-            .description("הצג את הדף של היום")
-            .supportedFamilies([
-                .accessoryCircular,
-                .accessoryInline,
-                .accessoryRectangular,
-                .systemSmall,
-                .systemMedium,
-                .systemLarge
-            ])
-//            .contentMarginsDisabled()
+        StaticConfiguration(kind: "MyWidget", provider: Provider()) { entry in
+            todayEntryView(entry: entry)
         }
+        .configurationDisplayName("הדף היומי")
+        .description("הצג את הדף של היום")
+        .supportedFamilies([
+            .accessoryCircular,
+            .accessoryInline,
+            .accessoryRectangular,
+            .systemSmall,
+            .systemMedium,
+            .systemLarge
+        ])
+    }
+}
+
+extension View {
+    func widgetBackground(backgroundView: some View) -> some View {
+        if #available(iOSApplicationExtension 17.0, *) {
+            return containerBackground(for: .widget) {
+                backgroundView
+            }
+        } else {
+            return background(backgroundView)
+        }
+    }
 }
 
 struct today_Previews: PreviewProvider {
