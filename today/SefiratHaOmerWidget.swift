@@ -223,20 +223,17 @@ struct SefiratHaOmerCircularEntryView: View {
       }
     case .accessoryCircular:
       ZStack {
-        Gauge(value: progressValue, in: 0.0...49.0) {
-          Text("לעמר")
-            .font(Font.custom("SiddurOC-Regular", size: 16))
-            .foregroundStyle(.gray800)
-        }
-        .gaugeStyle(.accessoryCircular)
-        .tint(.orange)
-
-        lagBaOmerFlame
+        OmerCircularGaugeRing(progress: progressValue / 49.0)
 
         Text(hebrewDay)
           .font(Font.custom("SiddurOC-Black", size: 34))
           .foregroundStyle(.gray800)
-          .offset(y: -10)
+          .offset(y: -6)
+
+        Text("לעמר")
+          .font(Font.custom("SiddurOC-Regular", size: 16))
+          .foregroundStyle(.gray800)
+          .offset(y: 24)
       }
     case .accessoryRectangular:
       SefiratHaOmerEntryView(entry: entry)
@@ -245,29 +242,96 @@ struct SefiratHaOmerCircularEntryView: View {
     }
   }
 
+}
+
+struct OmerCircularGaugeRing: View {
+  let progress: Double
+
+  private let startAngle = 135.0
+  private let endAngle = 405.0
+  private let lagBaOmerProgress = 33.0 / 49.0
+  private let lagBaOmerGap = 18.0
+
+  private var clampedProgress: Double {
+    min(max(progress, 0), 1)
+  }
+
+  var body: some View {
+    ZStack {
+      OmerGaugeArc(startAngle: startAngle, endAngle: lagBaOmerAngle - lagBaOmerGap)
+        .stroke(.gray800.opacity(0.34), style: StrokeStyle(lineWidth: 6, lineCap: .round))
+
+      OmerGaugeArc(startAngle: lagBaOmerAngle + lagBaOmerGap, endAngle: endAngle)
+        .stroke(.gray800.opacity(0.34), style: StrokeStyle(lineWidth: 6, lineCap: .round))
+
+      progressArc
+
+      lagBaOmerFlame
+    }
+    .frame(width: 52, height: 52)
+  }
+
+  @ViewBuilder
+  private var progressArc: some View {
+    if progressAngle <= lagBaOmerAngle - lagBaOmerGap {
+      OmerGaugeArc(startAngle: startAngle, endAngle: progressAngle)
+        .stroke(.gray800.opacity(0.82), style: StrokeStyle(lineWidth: 6, lineCap: .round))
+    } else if progressAngle <= lagBaOmerAngle + lagBaOmerGap {
+      OmerGaugeArc(startAngle: startAngle, endAngle: lagBaOmerAngle - lagBaOmerGap)
+        .stroke(.gray800.opacity(0.82), style: StrokeStyle(lineWidth: 6, lineCap: .round))
+    } else {
+      OmerGaugeArc(startAngle: startAngle, endAngle: lagBaOmerAngle - lagBaOmerGap)
+        .stroke(.gray800.opacity(0.82), style: StrokeStyle(lineWidth: 6, lineCap: .round))
+
+      OmerGaugeArc(startAngle: lagBaOmerAngle + lagBaOmerGap, endAngle: progressAngle)
+        .stroke(.gray800.opacity(0.82), style: StrokeStyle(lineWidth: 6, lineCap: .round))
+    }
+  }
+
+  private var progressAngle: Double {
+    startAngle + ((endAngle - startAngle) * clampedProgress)
+  }
+
+  private var lagBaOmerAngle: Double {
+    startAngle + ((endAngle - startAngle) * lagBaOmerProgress)
+  }
+
   private var lagBaOmerFlame: some View {
-    let progress = 33.0 / 49.0
-    let angle = Angle.degrees(135 + (270 * progress))
-    let radius: CGFloat = 25
+    markerFlame(size: 7.5)
+      .foregroundStyle(.white)
+  }
+
+  private func markerFlame(size: CGFloat) -> some View {
+    let angle = Angle.degrees(lagBaOmerAngle)
+    let radius: CGFloat = 26
     let x = cos(angle.radians) * radius
     let y = sin(angle.radians) * radius
 
     return Image(systemName: "flame.fill")
-      .font(.system(size: 10, weight: .black))
-      .foregroundStyle(
-        LinearGradient(
-          colors: [
-            Color(red: 1.0, green: 0.98, blue: 0.0),
-            Color(red: 1.0, green: 0.36, blue: 0.0),
-            Color(red: 1.0, green: 0.0, blue: 0.0),
-          ],
-          startPoint: .top,
-          endPoint: .bottom
-        )
-      )
-      .shadow(color: Color(red: 1.0, green: 0.22, blue: 0.0).opacity(0.95), radius: 3)
-      .shadow(color: Color(red: 1.0, green: 0.74, blue: 0.0).opacity(0.75), radius: 1)
+      .font(.system(size: size, weight: .black))
+      .frame(width: 11, height: 11)
       .offset(x: x, y: y)
+  }
+}
+
+struct OmerGaugeArc: Shape {
+  let startAngle: Double
+  let endAngle: Double
+
+  func path(in rect: CGRect) -> Path {
+    var path = Path()
+    let radius = min(rect.width, rect.height) / 2
+    let center = CGPoint(x: rect.midX, y: rect.midY)
+
+    path.addArc(
+      center: center,
+      radius: radius,
+      startAngle: .degrees(startAngle),
+      endAngle: .degrees(endAngle),
+      clockwise: false
+    )
+
+    return path
   }
 }
 
