@@ -143,10 +143,10 @@ struct MarkAsLearnt: View {
             }.onAppear {
                 // Check if the Daf was learned today
                 isDafLearnt = checkIfDafLearnedToday()
-                // Schedule daily reset for midnight
-                scheduleDailyReset()
                 // Request notification authorization
                 checkNotificationAuthorization()
+                // Schedule daily reset for midnight
+                scheduleDailyReset()
                 // Schedule notifications
                 scheduleNotifications()
             }.alert(isPresented: $showAlert) {
