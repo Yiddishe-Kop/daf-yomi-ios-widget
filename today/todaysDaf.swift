@@ -15,29 +15,22 @@ struct DafYomiEntry: TimelineEntry {
 }
 
 struct Provider: TimelineProvider {
+    private let fallbackDaf = DafYomiData(tractate: "ברכות", daf: "ב.", ref: "ברכות.ב")
+
     func getSnapshot(in context: Context, completion: @escaping (DafYomiEntry) -> Void) {
-        let entry = DafYomiEntry(date: Date(), data: DafYomiData(tractate: "ברכות", daf: "ב.", ref: "ברכות.ב"))
+        let entry = DafYomiEntry(date: Date(), data: fallbackDaf)
         completion(entry)
     }
     
     func getTimeline(in context: Context, completion: @escaping (Timeline<DafYomiEntry>) -> Void) {
-        var entries: [DafYomiEntry] = []
-        
-        let apiManager = TodayController()
-        apiManager.fetchDafYomi {
-            let dafYomiData = apiManager.dafYomiData ?? DafYomiData(tractate: "ברכות", daf: "ב.", ref: "ברכות.ב")
-            let entry = DafYomiEntry(date: Date(), data: dafYomiData)
-            entries.append(entry)
-            
-            let tomorrow = Calendar.current.date(byAdding: .day, value: 1, to: Date())!
-            let midnight = Calendar.current.startOfDay(for: tomorrow)
-            let timeline = Timeline(entries: entries, policy: .after(midnight))
-            completion(timeline)
-        }
+        let entry = DafYomiEntry(date: Date(), data: fallbackDaf)
+        let tomorrow = Calendar.current.date(byAdding: .day, value: 1, to: Date())!
+        let midnight = Calendar.current.startOfDay(for: tomorrow)
+        completion(Timeline(entries: [entry], policy: .after(midnight)))
     }
     
     func placeholder(in context: Context) -> DafYomiEntry {
-        DafYomiEntry(date: Date(), data: DafYomiData(tractate: "ברכות", daf: "ב.", ref: "ברכות.ב"))
+        DafYomiEntry(date: Date(), data: fallbackDaf)
     }
 }
 
@@ -69,13 +62,7 @@ struct todayEntryView : View {
                         .font(Font.custom("SiddurOC-Black", size: 25))
                 }.environment(\.layoutDirection, .rightToLeft)
             case .systemSmall:
-                VStack {
-                    Spacer()
-                    HStack {
-                        Spacer()
-                        DafGuage(dafYomiData: entry.data!)
-                    }
-                }
+                SefiratHaOmerHomeEntryView(entry: OmerHomeEntryFactory.entry(for: entry.date))
             case .systemMedium:
                 DafGuage(dafYomiData: entry.data!)
             case .systemLarge, .systemExtraLarge:
@@ -100,9 +87,7 @@ struct todaysDaf: Widget {
             .accessoryCircular,
             .accessoryInline,
             .accessoryRectangular,
-            .systemSmall,
-            .systemMedium,
-            .systemLarge
+            .systemSmall
         ])
     }
 }

@@ -12,6 +12,9 @@ import SwiftUI
 struct todayBundle: WidgetBundle {
     var body: some Widget {
         todaysDaf()
+        SefiratHaOmerWidget()
+        SefiratHaOmerCircularWidget()
+        SefiratHaOmerHomeWidget()
         todayDafLiveActivity()
     }
 }

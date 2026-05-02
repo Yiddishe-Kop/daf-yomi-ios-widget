@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE28F80A2E7D519F00B1B55F /* daf-yomi.icon in Resources */ = {isa = PBXBuildFile; fileRef = BE28F8092E7D519F00B1B55F /* daf-yomi.icon */; };
+		BEAA00022E00000000000001 /* SefiratHaOmerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAA00012E00000000000001 /* SefiratHaOmerWidget.swift */; };
 		BE45EC102A3B4C83008ACA2A /* SiddurOC-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE45EC0E2A3B4C83008ACA2A /* SiddurOC-Regular.otf */; };
 		BE45EC112A3B4C83008ACA2A /* SiddurOC-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE45EC0E2A3B4C83008ACA2A /* SiddurOC-Regular.otf */; };
 		BE45EC122A3B4C83008ACA2A /* SiddurOC-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE45EC0F2A3B4C83008ACA2A /* SiddurOC-Black.otf */; };
@@ -93,6 +94,7 @@
 
 /* Begin PBXFileReference section */
 		BE28F8092E7D519F00B1B55F /* daf-yomi.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = "daf-yomi.icon"; sourceTree = "<group>"; };
+		BEAA00012E00000000000001 /* SefiratHaOmerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SefiratHaOmerWidget.swift; sourceTree = "<group>"; };
 		BE45EC0E2A3B4C83008ACA2A /* SiddurOC-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SiddurOC-Regular.otf"; sourceTree = "<group>"; };
 		BE45EC0F2A3B4C83008ACA2A /* SiddurOC-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SiddurOC-Black.otf"; sourceTree = "<group>"; };
 		BE45EC1C2A3B5B13008ACA2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				BEF5B6A02A3B1FD8007D74A8 /* helpers.swift */,
 				BE57CFD92A2D35CF0068E498 /* todayDafLiveActivity.swift */,
 				BE57CFDB2A2D35CF0068E498 /* todaysDaf.swift */,
+				BEAA00012E00000000000001 /* SefiratHaOmerWidget.swift */,
 				BE57CFDD2A2D35D00068E498 /* today.intentdefinition */,
 				BE57CFDE2A2D35D00068E498 /* Assets.xcassets */,
 				BE57CFE02A2D35D00068E498 /* Info.plist */,
@@ -512,6 +515,7 @@
 				BE45EC1F2A3B8002008ACA2A /* DafGuage.swift in Sources */,
 				BE57CFDA2A2D35CF0068E498 /* todayDafLiveActivity.swift in Sources */,
 				BE57CFDC2A2D35CF0068E498 /* todaysDaf.swift in Sources */,
+				BEAA00022E00000000000001 /* SefiratHaOmerWidget.swift in Sources */,
 				BEF5B69F2A3B1FCE007D74A8 /* DafYomiData.swift in Sources */,
 				BE57CFD82A2D35CF0068E498 /* todayBundle.swift in Sources */,
 			);
@@ -664,7 +668,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "daf-yomi/daf-yomi.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"daf-yomi/Preview Content\"";
 				DEVELOPMENT_TEAM = 3AS937TYU7;
 				ENABLE_PREVIEWS = YES;
@@ -700,7 +704,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "daf-yomi/daf-yomi.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"daf-yomi/Preview Content\"";
 				DEVELOPMENT_TEAM = 3AS937TYU7;
 				ENABLE_PREVIEWS = YES;
@@ -810,7 +814,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 3AS937TYU7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = today/Info.plist;
@@ -822,7 +826,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yiddishe-kop.daf-yomi.today";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -838,7 +842,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 3AS937TYU7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = today/Info.plist;
@@ -850,7 +854,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yiddishe-kop.daf-yomi.today";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
